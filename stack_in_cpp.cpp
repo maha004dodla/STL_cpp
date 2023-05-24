@@ -5,8 +5,8 @@ void display(stack<int> q)
 	stack<int>p=q;
 	while(!p.empty())
 	{
-		cout<<p.top()<<" ";
-		p.pop();
+		cout<<p.top()<<" ";/*to print top elements*/
+		p.pop();/*to delete elements*/
 	}
 	cout<<endl;
 }
