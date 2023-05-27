@@ -21,4 +21,14 @@ int main()
 	{
 		cout<<*j<<" ";
 	}
+	cout<<endl;
+	int se=30;
+	if(find(arr.begin(),arr.end(),se) != arr.end())
+	{
+		cout<<"element present"<<endl;
+	}
+	else
+	{
+		cout<<"not found"<<endl;
+	}
 }
