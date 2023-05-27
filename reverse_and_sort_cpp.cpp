@@ -22,13 +22,23 @@ int main()
 		cout<<*j<<" ";
 	}
 	cout<<endl;
-	int se=30;
-	if(find(arr.begin(),arr.end(),se) != arr.end())
+	/*if(find(arr.begin(),arr.end(),se) != arr.end())//implemented by linear search o(n)
 	{
 		cout<<"element present"<<endl;
 	}
 	else
 	{
 		cout<<"not found"<<endl;
+	}*/
+	//for binary search array must be sorted
+	int se=10;
+	sort(arr.begin(),arr.end());
+	if(binary_search(arr.begin(),arr.end(),se))//o(log2(n))
+	{
+		cout<<"element found"<<endl;
+	}
+	else
+	{
+		cout<<"element not found"<<endl;
 	}
 }
