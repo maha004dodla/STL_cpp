@@ -7,7 +7,7 @@ void create_seive()
 {
 	for(int i=0; i<N; i++)
 	{
-		primes[i]=i;
+	     primes[i]=i;
 	}
 	primes[0]=primes[1]=0;
 	for(int i=2; i*i<=N; i++)//loop for first multiple
